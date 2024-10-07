@@ -1,4 +1,4 @@
-export default function Home() {
+export default function HomePage() {
   return (
     <div>
       <div className="container mx-auto p-4">
