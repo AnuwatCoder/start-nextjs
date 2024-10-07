@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import Loading from "../components/Loading";
 
 const Posts = () => {
@@ -8,7 +8,7 @@ const Posts = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [page, setPage] = useState(1);
-  const limit = 30; // Number of posts per page
+  const limit = 15; // Number of posts per page
 
   useEffect(() => {
     const fetchPosts = async () => {
